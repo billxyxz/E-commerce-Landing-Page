@@ -1,0 +1,325 @@
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="menu.js" defer></script>
+    <title>Document</title>
+</head>
+<body >
+    <div class="container p-5"><!--Content Wrapper-->
+        <div class="flex justify-between bg-white items-center fixed top-0 w-full px-6 py-3 left-0 shadow-sm"><!--Start of Navigation-->
+            <div class="flex items-center justify-cente">
+                <div class="bg-gradient-to-tr from-purple-400 to-red-600 w-10 h-10 rounded-lg"></div>
+                <h1 class="text-3xl text-gray-600 ml-0.5">Logo</h1>
+            </div>
+            <div class="navlinks mt-1 md:text-center md:block flex top-[60px] md:top-0 flex-col items-start bg-white md:bg-transparent absolute left-0 translate-x-full transition-all duration-300 ease-linear md:translate-x-0  p-6 md:p-0 w-full md:w-auto md:static">
+                <a href="#hero" class="text-gray-600 hover:text-purple-600 p-4">Home</a>
+                <a href="#shop" class="md:text-gray-600 hover:text-purple-600 p-4">Shop</a>
+                <a href="#about" class="text-gray-600 hover:text-purple-600 p-4">About</a>
+                <a href="#contact" class="text-gray-600 hover:text-purple-600 p-4">Contact</a>
+                <a href="#" class="bg-black text-gray-50 hover:bg-gray-900 p-3 rounded-full px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                      </svg>
+                      
+                    Cart [0]</a>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger w-6 h-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+               
+        </div><!--End of Navigation-->
+        <main>
+            <section id="hero" class="flex flex-col md:flex-row  mt-12 lg:mt-0 scroll-mt-64 sm:scroll-mt-40"><!--Hero Section-->
+                <div class="text-center md:text-left flex flex-col  w-full md:mt-32 md:w-3/5">
+                    <h1 class="text-4xl lg:text-6xl font-[Lato] font-black">
+                        Fashionable Clothing.<br>
+                        Re-imagined.
+                    </h1>
+                    <button class="bg-black text-white uppercase px-3 py-1.5 rounded-full mt-4 flex gap-1 self-center md:self-start">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                      </svg>
+                      </button>
+                </div>
+                <div class="w-full md:w-2/5 flex justify-center object-cover object-center max-h-screen">
+                    <img src="images/hero-image.png" alt="">
+                </div>
+            </section><!--End of Hero Section-->
+            <section class="mt-16 scroll-mt-24" id="shop"><!--Clothing Section-->
+                <div class="flex justify-between mb-5">
+                    <h1 class="text-3xl font-medium">
+                        Men's Collection
+                    </h1>
+                    <span class="hover:underline"><a href="#" class="flex items-center text-xl">View All<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-7 ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>
+                      </a></span>
+                </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-content-center xl:grid-cols-4 gap-6"><!--Clothing grid section-->
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                    <div class="w-52 h-72 mx-auto">
+                        <a href="">
+                            <img src="images/tshirt-mockup-new.png" alt="" class="object-center self-center w-full h-full"> 
+                         </a>
+                    </div>
+                    <div class="p-3">
+                        <h3>Men T-Shirt</h3>
+                        <div class="flex gap-1.5 my-2">
+                            <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                        </div>
+                        <div class="flex gap-1.5 my-2 items-center">
+                            <span class="uppercase">Sizes: </span>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                        </div>
+                        <div >
+                            <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                    <div class="w-52 h-72 mx-auto">
+                        <a href="">
+                            <img src="images/Jean-jacket.png" alt="" class="object-center self-center w-full h-full"> 
+                         </a>
+                    </div>
+                    <div class="p-3">
+                        <h3>Men's Jean Jacket</h3>
+                        <div class="flex gap-1.5 my-2">
+                            <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                        </div>
+                        <div class="flex gap-1.5 my-2 items-center">
+                            <span class="uppercase">Sizes: </span>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                        </div>
+                        <div >
+                            <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                    <div class="w-52 h-72 mx-auto">
+                        <a href="">
+                            <img src="images/Sneakers.png" alt="" class="object-center self-center w-full h-full"> 
+                         </a>
+                    </div>
+                    <div class="p-3">
+                        <h3>Nike Sneaker</h3>
+                        <div class="flex gap-1.5 my-2">
+                            <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                        </div>
+                        <div class="flex gap-1.5 my-2 items-center">
+                            <span class="uppercase">Sizes: </span>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">43</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">44</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">45</div>
+                        </div>
+                        <div >
+                            <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                    <div class="w-52 h-72 mx-auto">
+                        <a href="">
+                            <img src="images/Cactus-jack.png" alt="" class="object-center self-center w-full h-full"> 
+                         </a>
+                    </div>
+                    <div class="p-3">
+                        <h3>Cactus Jack Hoodie</h3>
+                        <div class="flex gap-1.5 my-2">
+                            <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                            <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                        </div>
+                        <div class="flex gap-1.5 my-2 items-center">
+                            <span class="uppercase">Sizes: </span>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                            <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                        </div>
+                        <div >
+                            <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between mb-5 mt-16">
+                <h1 class="text-3xl font-medium">
+                    Women's Collection
+                </h1>
+                <span class="hover:underline"><a href="#" class="flex items-center text-xl">View All<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-7 ml-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                  </a></span>
+            </div>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-content-center xl:grid-cols-4 gap-6"><!--Female Clothing grid section-->
+            <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="w-52 h-72 mx-auto">
+                    <a href="">
+                        <img src="images/female-long-dress.png" alt="" class="object-center self-center w-full h-full"> 
+                     </a>
+                </div>
+                <div class="p-3">
+                    <h3>Lady Long Dress</h3>
+                    <div class="flex gap-1.5 my-2">
+                        <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                    </div>
+                    <div class="flex gap-1.5 my-2 items-center">
+                        <span class="uppercase">Sizes: </span>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                    </div>
+                    <div >
+                        <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="w-52 h-72 mx-auto">
+                    <a href="">
+                        <img src="images/fannel shirt.png" alt="" class="object-center self-center w-full h-full"> 
+                     </a>
+                </div>
+                <div class="p-3">
+                    <h3>Button Fannel Shirt</h3>
+                    <div class="flex gap-1.5 my-2">
+                        <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                    </div>
+                    <div class="flex gap-1.5 my-2 items-center">
+                        <span class="uppercase">Sizes: </span>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                    </div>
+                    <div >
+                        <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="w-52 h-72 mx-auto">
+                    <a href="">
+                        <img src="images/Denim-shorts.png" alt="" class="object-center self-center w-full h-full"> 
+                     </a>
+                </div>
+                <div class="p-3">
+                    <h3>Female Denim Streetwear</h3>
+                    <div class="flex gap-1.5 my-2">
+                        <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-gray-500 h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-white h-5 w-5 rounded-full shadow-md"></div>
+                    </div>
+                    <div class="flex gap-1.5 my-2 items-center">
+                        <span class="uppercase">Sizes: </span>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">L</div>
+                        <div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XL</div><div class="border-2 border-gray-300 text-gray-400 rounded-md px-2 py-1 text-xs">XXL</div>
+                    </div>
+                    <div >
+                        <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="w-52 h-72 mx-auto">
+                    <a href="">
+                        <img src="images/4-in-1.png" alt="" class="object-center self-center w-full h-full"> 
+                     </a>
+                </div>
+                <div class="p-3">
+                    <h3>4-in-1 Plaid Bag</h3>
+                    <div class="flex gap-1.5 my-2">
+                        <div class="bg-black h-5 w-5 rounded-full shadow-md"></div>
+                        <div class="bg-Brown h-5 w-5 rounded-full shadow-md"></div>
+                    </div>
+                    
+                    <div >
+                        <button class="bg-black rounded-full text-gray-100 px-4 py-2 flex gap-1.5"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>
+                          Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </section><!--End of Collection's Section-->
+            <section id="about" class="mt-12 mb-12 scroll-mt-20 sm:scroll-mt-14">
+                <!--Start of About Section-->
+                <h1 class="uppercase font-[Lato] font-black text-4xl md:text-6xl text-center mb-6 sm:mb-12 ">About Us</h1>
+                <div class="flex flex-col-reverse items-center md:flex-row gap-3 px-12 p-6">
+                    <div class="text-center md:text-left md:flex-col md:flex w-full md:w-1/2">
+                        <div class="w-4/5 mx-auto md:mx-0">
+                            <h2 class="text-3xl font-[Lato] font-extralight tracking-wide">Our Goal:</h2>
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui debitis amet, accusantium dolores architecto consectetur incidunt itaque. Velit eum facere voluptas nobis placeat asperiores labore tenetur aut. Vero, ea voluptatum.
+                           </p>
+                        </div>
+                        <button class="bg-black text-white px-3.5 py-2 mt-4 rounded md:self-start">Read More</button>
+                    </div>
+                    <div class="w-full md:w-1/2 h-full">
+                        <img src="images/about-image.jpg" alt="" class="w-80 h-full mx-auto">
+                    </div>
+                </div>
+            </section><!--End of About Section-->
+            <section class="mt-12 mb-12"><!--Newsletter Section-->
+                <div class="w-full h-auto md:items-center bg-gray-600 rounded-sm md:flex shadow-sm">
+                    <div class="md:w-3/5 w-full p-12 bg-gradient-to-r from-black md:via-slate-700 md:to-transparent to-gray-700">
+                        <div class="md:w-3/5 w-full text-white">
+                            <h2 class="text-2xl font-medium mb-4">Newsletter</h2>
+                            <p class="mb-4 text-base">Subscribe to our newsletter to get updates on our latest offers.</p>
+                            <div>
+                                <input type="email" placeholder="Enter email address" class="bg-gray-600 text-gray-200 placeholder-gray-400 px-4 py-3 mb-3 w-full rounded focus:outline-none">
+                                <button type="submit" class="border-gray-400 border-2 px-4 py-2">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-2/5 md:h-full md:flex hidden">
+                        <img src="images/Newsletter.png" alt="Envelope Icon">
+                    </div>
+                </div>
+            </section><!--End of Newsletter section-->
+            <section id="contact" class="text-center">
+                <h2 class="font-[Lato] font-medium uppercase text-2xl mb-6">Drey <br> <span class="ml-32 lowercase">Collections</span></h2>
+                <address>
+                    <p>Drey Collections Inc. 37 Dejon Road, Bariga, Lagos State, Nigeria</p>
+                    Email: <a class="py-1" href="erobagacollins@gmail.com">erobagacollins@gmail.com</a><br>
+                    Tel: <a class="py-1" href="tel:+2348064417586">(234) 806-441-7586</a>
+                </address>
+            </section>
+        </main>
+    </div>
+    <footer class="border-t-2 border-t-gray-300 py-4 text-center w-full">
+        <p class="font-[Inter]"><span class="border-r-2 border-r-gray-300 px-1 mx-1">Jun. 2023 Drey Collection</span>All rights reserved</p>
+    </footer>
+</body>
+</html>
