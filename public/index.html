@@ -3,12 +3,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="menu.js" defer></script>
     <title>Document</title>
 </head>
 <body >
-    <div class="container p-5"><!--Content Wrapper-->
-        <div class="flex justify-between bg-white items-center fixed top-0 w-full px-6 py-3 left-0 shadow-sm"><!--Start of Navigation-->
+    <div class="container mx-auto p-5"><!--Content Wrapper-->
+        <div class="flex justify-between bg-white items-center fixed top-0 w-full px-6 py-4 left-0 shadow-sm z-10"><!--Start of Navigation-->
             <div class="flex items-center justify-cente">
                 <div class="bg-gradient-to-tr from-purple-400 to-red-600 w-10 h-10 rounded-lg"></div>
                 <h1 class="text-3xl text-gray-600 ml-0.5">Logo</h1>
@@ -31,11 +30,12 @@
                
         </div><!--End of Navigation-->
         <main>
-            <section id="hero" class="flex flex-col md:flex-row  mt-12 lg:mt-0 scroll-mt-64 sm:scroll-mt-40"><!--Hero Section-->
-                <div class="text-center md:text-left flex flex-col  w-full md:mt-32 md:w-3/5">
+            <section id="hero" class="flex flex-col md:flex-row  mt-12 lg:mt-12 scroll-mt-64 sm:scroll-mt-40"><!--Hero Section-->
+                <div class="text-center md:text-left flex flex-col  w-full md:mt-32 mt-6 md:w-3/5 hero-text">
                     <h1 class="text-4xl lg:text-6xl font-[Lato] font-black">
                         Fashionable Clothing.<br>
-                        Re-imagined.
+                        Re-imagined.<br>
+                        Quality Assured
                     </h1>
                     <button class="bg-black text-white uppercase px-3 py-1.5 rounded-full mt-4 flex gap-1 self-center md:self-start">Shop Now <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
@@ -43,7 +43,7 @@
                       </button>
                 </div>
                 <div class="w-full md:w-2/5 flex justify-center object-cover object-center max-h-screen">
-                    <img src="images/hero-image.png" alt="">
+                    <img src="images/hero-image.png" alt="" class="hero-img -z-10">
                 </div>
             </section><!--End of Hero Section-->
             <section class="mt-16 scroll-mt-24" id="shop"><!--Clothing Section-->
@@ -57,7 +57,7 @@
                       </a></span>
                 </div>
             <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 place-content-center xl:grid-cols-4 gap-6"><!--Clothing grid section-->
-                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start item">
                     <div class="w-52 h-72 mx-auto">
                         <a href="">
                             <img src="images/tshirt-mockup-new.png" alt="" class="object-center self-center w-full h-full"> 
@@ -83,7 +83,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start item">
                     <div class="w-52 h-72 mx-auto">
                         <a href="">
                             <img src="images/Jean-jacket.png" alt="" class="object-center self-center w-full h-full"> 
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start item">
                     <div class="w-52 h-72 mx-auto">
                         <a href="">
                             <img src="images/Sneakers.png" alt="" class="object-center self-center w-full h-full"> 
@@ -135,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start">
+                <div class="shadow-md bg-slate-50 rounded flex flex-col self-start item">
                     <div class="w-52 h-72 mx-auto">
                         <a href="">
                             <img src="images/Cactus-jack.png" alt="" class="object-center self-center w-full h-full"> 
@@ -273,7 +273,7 @@
             </div>
             </div>
             </section><!--End of Collection's Section-->
-            <section id="about" class="mt-12 mb-12 scroll-mt-20 sm:scroll-mt-14">
+            <section id="about" class="mt-12 mb-12 scroll-mt-20 sm:scroll-mt-24">
                 <!--Start of About Section-->
                 <h1 class="uppercase font-[Lato] font-black text-4xl md:text-6xl text-center mb-6 sm:mb-12 ">About Us</h1>
                 <div class="flex flex-col-reverse items-center md:flex-row gap-3 px-12 p-6">
@@ -291,7 +291,7 @@
                     </div>
                 </div>
             </section><!--End of About Section-->
-            <section class="mt-12 mb-12"><!--Newsletter Section-->
+            <section class="mt-12 mb-12 w-full"><!--Newsletter Section-->
                 <div class="w-full h-auto md:items-center bg-gray-600 rounded-sm md:flex shadow-sm">
                     <div class="md:w-3/5 w-full p-12 bg-gradient-to-r from-black md:via-slate-700 md:to-transparent to-gray-700">
                         <div class="md:w-3/5 w-full text-white">
@@ -304,7 +304,7 @@
                         </div>
                     </div>
                     <div class="md:w-2/5 md:h-full md:flex hidden">
-                        <img src="images/Newsletter.png" alt="Envelope Icon">
+                        <img src="images/Newsletter.png" alt="Envelope Icon" class="animate-pulse">
                     </div>
                 </div>
             </section><!--End of Newsletter section-->
@@ -321,5 +321,9 @@
     <footer class="border-t-2 border-t-gray-300 py-4 text-center w-full">
         <p class="font-[Inter]"><span class="border-r-2 border-r-gray-300 px-1 mx-1">Jun. 2023 Drey Collection</span>All rights reserved</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
+    <script src="menu.js" defer></script>
 </body>
 </html>
